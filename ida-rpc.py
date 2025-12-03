@@ -10,7 +10,7 @@ PLUGIN_NAME = "Discord RPC for IDA"
 PLUGIN_HOTKEY = "Ctrl-Alt-D"
 PLUGIN_COMMENT = "Display IDA status in Discord"
 PLUGIN_HELP = "This plugin updates your Discord status with IDA information"
-PLUGIN_VERSION = "1.0"
+PLUGIN_VERSION = "1.1"
 
 CLIENT_ID = "1445787592414199888"
 THROTTLE_TIME = 5  # Minimum time between updates in seconds
@@ -101,7 +101,7 @@ class DiscordRPCPlugin(ida_idaapi.plugin_t):
                     details=f"Analyzing: {file_name}",
                     state=f"Function: {func_name}",
                     large_image="ida_logo",
-                    large_text="IDA Pro 9.0",
+                    large_text="IDA Pro 9.2",
                     start=self.start_time
                 )
                 self.last_update_time = time.time()
@@ -119,4 +119,5 @@ class IDAViewHook(ida_kernwin.UI_Hooks):
 
 def PLUGIN_ENTRY():
     return DiscordRPCPlugin()
+
 
