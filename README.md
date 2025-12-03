@@ -1,5 +1,5 @@
-# IDA 9.0 Discord RPC
-**Discord Rich Presence plugin for IDA 9.0**
+# IDA 9.2 Discord RPC
+**Discord Rich Presence plugin for IDA 9.2**
 
 # Instructions
 1. Install pypresence (**pip install pypresence**)
