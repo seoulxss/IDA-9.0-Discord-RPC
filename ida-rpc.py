@@ -12,7 +12,7 @@ PLUGIN_COMMENT = "Display IDA status in Discord"
 PLUGIN_HELP = "This plugin updates your Discord status with IDA information"
 PLUGIN_VERSION = "1.0"
 
-CLIENT_ID = "1274210451273551973"
+CLIENT_ID = "1445787592414199888"
 THROTTLE_TIME = 5  # Minimum time between updates in seconds
 
 class DiscordRPCPlugin(ida_idaapi.plugin_t):
@@ -119,3 +119,4 @@ class IDAViewHook(ida_kernwin.UI_Hooks):
 
 def PLUGIN_ENTRY():
     return DiscordRPCPlugin()
+
